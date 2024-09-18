@@ -38,7 +38,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         cellW = (view.bounds.width - space*2 - itemSpace*Double(level - 1))/Double(level)
         colorArray.removeAllObjects()
         numberArray.removeAllObjects()
-        for item in 0...level*level - 1 {
+        for _ in 0...level*level - 1 {
 //            colorArray.add(randomColor())
             numberArray.add(String.init(format: "%ld", Int.random(in: 0...level*level - 1)))
         }
@@ -105,7 +105,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
             textField.backgroundColor = .systemGray5
             cell.contentView.addSubview(textField)
         }else if indexPath.section == 2{
-            
+            cell.L.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+
             cell.L.text = "I rememberd"
             if isRemeber {
                 cell.L.text = "Submit"
