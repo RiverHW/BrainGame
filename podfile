@@ -1,0 +1,12 @@
+#Uncomment this line to define a global platform for your project
+platform :ios, '15.0'
+
+target 'MemoryApp' do
+  use_frameworks!
+
+
+    pod 'IQKeyboardManager'
+    
+    
+end
+

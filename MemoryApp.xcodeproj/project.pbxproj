@@ -16,6 +16,9 @@
 		04A08E3F2C9A676B00578C45 /* MemoryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A08E3E2C9A676B00578C45 /* MemoryAppTests.swift */; };
 		04A08E492C9A676B00578C45 /* MemoryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A08E482C9A676B00578C45 /* MemoryAppUITests.swift */; };
 		04A08E4B2C9A676B00578C45 /* MemoryAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A08E4A2C9A676B00578C45 /* MemoryAppUITestsLaunchTests.swift */; };
+		04A08E5F2C9AA09500578C45 /* BaseOneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A08E5E2C9AA09500578C45 /* BaseOneCollectionViewCell.xib */; };
+		04A08E602C9AA09500578C45 /* BaseOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A08E5D2C9AA09500578C45 /* BaseOneCollectionViewCell.swift */; };
+		AC4F1C3BE821CCF4A175E54B /* Pods_MemoryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FA1917852C7FC6E20E951A /* Pods_MemoryApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01FA1917852C7FC6E20E951A /* Pods_MemoryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A08E242C9A676700578C45 /* MemoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A08E272C9A676700578C45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A08E292C9A676800578C45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		04A08E442C9A676B00578C45 /* MemoryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A08E482C9A676B00578C45 /* MemoryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryAppUITests.swift; sourceTree = "<group>"; };
 		04A08E4A2C9A676B00578C45 /* MemoryAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04A08E5D2C9AA09500578C45 /* BaseOneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOneCollectionViewCell.swift; sourceTree = "<group>"; };
+		04A08E5E2C9AA09500578C45 /* BaseOneCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseOneCollectionViewCell.xib; sourceTree = "<group>"; };
+		9FC3DB8DFD7929B97E2E096F /* Pods-MemoryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryApp.debug.xcconfig"; path = "Target Support Files/Pods-MemoryApp/Pods-MemoryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BC32BBC87A50A6B7E7B73B2D /* Pods-MemoryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryApp.release.xcconfig"; path = "Target Support Files/Pods-MemoryApp/Pods-MemoryApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4F1C3BE821CCF4A175E54B /* Pods_MemoryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,8 @@
 				04A08E3D2C9A676B00578C45 /* MemoryAppTests */,
 				04A08E472C9A676B00578C45 /* MemoryAppUITests */,
 				04A08E252C9A676700578C45 /* Products */,
+				5175584A60F2463811CB31AD /* Pods */,
+				54A9CF28A00C1DB20D267004 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +112,8 @@
 			children = (
 				04A08E272C9A676700578C45 /* AppDelegate.swift */,
 				04A08E292C9A676800578C45 /* SceneDelegate.swift */,
+				04A08E5D2C9AA09500578C45 /* BaseOneCollectionViewCell.swift */,
+				04A08E5E2C9AA09500578C45 /* BaseOneCollectionViewCell.xib */,
 				04A08E2B2C9A676800578C45 /* ViewController.swift */,
 				04A08E2D2C9A676800578C45 /* Main.storyboard */,
 				04A08E302C9A676B00578C45 /* Assets.xcassets */,
@@ -127,6 +140,23 @@
 			path = MemoryAppUITests;
 			sourceTree = "<group>";
 		};
+		5175584A60F2463811CB31AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FC3DB8DFD7929B97E2E096F /* Pods-MemoryApp.debug.xcconfig */,
+				BC32BBC87A50A6B7E7B73B2D /* Pods-MemoryApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		54A9CF28A00C1DB20D267004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01FA1917852C7FC6E20E951A /* Pods_MemoryApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A08E4E2C9A676B00578C45 /* Build configuration list for PBXNativeTarget "MemoryApp" */;
 			buildPhases = (
+				76A8B8DE905FD6AC7A03EE32 /* [CP] Check Pods Manifest.lock */,
 				04A08E202C9A676700578C45 /* Sources */,
 				04A08E212C9A676700578C45 /* Frameworks */,
 				04A08E222C9A676700578C45 /* Resources */,
+				0A708674842767A348BCCA6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +265,7 @@
 			files = (
 				04A08E312C9A676B00578C45 /* Assets.xcassets in Resources */,
 				04A08E342C9A676B00578C45 /* Base in Resources */,
+				04A08E5F2C9AA09500578C45 /* BaseOneCollectionViewCell.xib in Resources */,
 				04A08E2F2C9A676800578C45 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +286,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A708674842767A348BCCA6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoryApp/Pods-MemoryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoryApp/Pods-MemoryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MemoryApp/Pods-MemoryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A8B8DE905FD6AC7A03EE32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04A08E202C9A676700578C45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +336,7 @@
 				04A08E2C2C9A676800578C45 /* ViewController.swift in Sources */,
 				04A08E282C9A676800578C45 /* AppDelegate.swift in Sources */,
 				04A08E2A2C9A676800578C45 /* SceneDelegate.swift in Sources */,
+				04A08E602C9AA09500578C45 /* BaseOneCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,55 +513,73 @@
 		};
 		04A08E4F2C9A676B00578C45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC3DB8DFD7929B97E2E096F /* Pods-MemoryApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = S477XUK26U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemoryApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Memory Games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = langtu.MemoryApp;
+				PRODUCT_BUNDLE_IDENTIFIER = render.MemoryApp.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		04A08E502C9A676B00578C45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC32BBC87A50A6B7E7B73B2D /* Pods-MemoryApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = S477XUK26U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemoryApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Memory Games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = langtu.MemoryApp;
+				PRODUCT_BUNDLE_IDENTIFIER = render.MemoryApp.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

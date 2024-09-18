@@ -12,6 +12,8 @@ class BaseOneCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
+    @IBOutlet weak var L: UILabel!
 }
