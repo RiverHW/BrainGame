@@ -14,6 +14,5 @@ class BaseOneCollectionViewCell: UICollectionViewCell {
         // Initialization code
         
     }
-
     @IBOutlet weak var L: UILabel!
 }

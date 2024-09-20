@@ -39,7 +39,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         colorArray.removeAllObjects()
         numberArray.removeAllObjects()
         for _ in 0...level*level - 1 {
-//            colorArray.add(randomColor())
             numberArray.add(String.init(format: "%ld", Int.random(in: 0...level*level - 1)))
         }
         print(numberArray)
@@ -96,6 +95,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         if indexPath.section == 1 {
             textField.frame = cell.bounds
             textField.placeholder = String.init(format: "level : %ld", level - 1)
+            textField.keyboardType = .numberPad
             textField.isUserInteractionEnabled = false
             if isRemeber {
                 textField.placeholder = "? = "
@@ -107,7 +107,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         }else if indexPath.section == 2{
             cell.L.font = UIFont.systemFont(ofSize: 25, weight: .bold)
 
-            cell.L.text = "I rememberd"
+            cell.L.text = "Got it"
             if isRemeber {
                 cell.L.text = "Submit"
 
