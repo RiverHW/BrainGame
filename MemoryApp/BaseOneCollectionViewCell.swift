@@ -15,4 +15,5 @@ class BaseOneCollectionViewCell: UICollectionViewCell {
         
     }
     @IBOutlet weak var L: UILabel!
+    
 }

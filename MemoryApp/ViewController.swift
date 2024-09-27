@@ -247,7 +247,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
         
-        
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
 
     }
