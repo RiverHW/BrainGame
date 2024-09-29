@@ -24,6 +24,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     lazy var textField: UITextField = {
         let tf = UITextField.init()
         tf.backgroundColor = .white
+        tf.keyboardType = .numberPad
         tf.textAlignment = .center
         return tf
     }()
