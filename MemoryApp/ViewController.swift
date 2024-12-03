@@ -108,9 +108,23 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         }else if indexPath.section == 2{
             cell.L.font = UIFont.systemFont(ofSize: 25, weight: .bold)
 
-            cell.L.text = "Got it"
+            cell.L.text = "我记住了"
+
+            
+            
+            if let languageCode = Locale.current.languageCode?.contains("en") {
+                cell.L.text = "Got it"
+
+            }
+            
             if isRemeber {
-                cell.L.text = "Submit"
+                cell.L.text = "提交"
+
+                
+                if let languageCode = Locale.current.languageCode?.contains("en") {
+                    cell.L.text = "Submit"
+
+                }
 
             }
             cell.L.textColor = .black
@@ -235,7 +249,18 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     func finishFunc()  {
         isRemeber = false
 //        self.mainCollectionView.reloadData()
-        let alertController = UIAlertController.init(title: "Challenge failure", message: String.init(format: "Highest Score %ld", level - 2 ), preferredStyle: .alert)
+        
+        var title = "挑战失败"
+        var content = "最高分"
+        
+   
+        
+        if let languageCode = Locale.current.languageCode?.contains("en") {
+            title = "Challenge failure"
+            content = "Highest Score"
+        }
+        
+        let alertController = UIAlertController.init(title: title, message: String.init(format: "%@ : %ld",content, level - 2 ), preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Restart", style: .default, handler: {
             action in
             self.level = 2
